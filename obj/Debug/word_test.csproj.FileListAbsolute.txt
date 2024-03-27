@@ -1,0 +1,13 @@
+E:\smth\word_test\bin\Debug\word_test.dll
+E:\smth\word_test\bin\Debug\word_test.pdb
+E:\smth\word_test\bin\Debug\word_test.dll.manifest
+E:\smth\word_test\bin\Debug\word_test.vsto
+E:\smth\word_test\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+E:\smth\word_test\obj\Debug\word_test.csproj.AssemblyReference.cache
+E:\smth\word_test\obj\Debug\word_test.Properties.Resources.resources
+E:\smth\word_test\obj\Debug\word_test.csproj.GenerateResource.cache
+E:\smth\word_test\obj\Debug\word_test.csproj.CoreCompileInputs.cache
+E:\smth\word_test\obj\Debug\word_test.csproj.Up2Date
+E:\smth\word_test\obj\Debug\word_test.dll
+E:\smth\word_test\obj\Debug\word_test.pdb
+E:\smth\word_test\obj\Debug\word_test.TestRibbon.resources

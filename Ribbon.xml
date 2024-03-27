@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabAddIns" label="Gigachat">
+                <group id="group1" label="Основные функции">
+                    <button id="token_button" onAction="GetToken" label="Вставить токен" showImage="false" />
+                    <button id="request_button" onAction="GetRequest" label="Сгенерировать текст по запросу" showImage="false" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+  <contextMenus>
+    <contextMenu idMso="ContextMenuText">
+      <button id="context_button1" label="Gigachat: Переписывание выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button2" label="Gigachat: Дополнение выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <menu id="submenu" label="Gigachat: Изменить стиль текста" >
+        <button id="submenu_button1" label="Деловой" />
+        <button id="submenu_button2" label="Научный" />
+        <button id="submenu_button3" label="Разговорный" />
+      </menu>
+      <gallery id="gallery" label="Gigachat: Генерация текста по эмоджи">
+        <item id="item1" imageMso="HappyFace" />
+        <item id="item2" imageMso="SadFace" />
+        <item id="item3" imageMso="HappyFace" />
+        <item id="item4" imageMso="SadFace" />
+      </gallery>
+    </contextMenu>
+  </contextMenus>
+</customUI>
