@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
+using System.Threading.Tasks;
+using System.Net.Http;
+using RestSharp;
 
 namespace word_test
 {
@@ -50,7 +53,18 @@ namespace word_test
             {
                 currentRange.Text = "Дополненный текст (Было: " + current_selected + ")";
             }
+        }
 
+        public async void SendPostRequest()
+        {
+            var options = new RestClientOptions("") { MaxTimeout = -1 };
+            var client = new RestClient(options);
+            var request = new RestRequest("https://ngw.devices.sberbank.ru:9443/api/v2/oauth", Method.Post);
+            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("Authorization", "Basic bWFzdGFkZW40NkBnbWFpbC5jb206UXBtendvYWwxMA==");
+            RestResponse response = await client.ExecuteAsync(request);
+            Console.WriteLine(response.Content);
         }
 
         public void GetToken(Office.IRibbonControl control)
@@ -60,26 +74,10 @@ namespace word_test
 
         public void GetRequest(Office.IRibbonControl control)
         {
+            //SendPostRequest();
+
             MessageBox.Show("Введите запрос");
         }
-
-        public void SendPostRequest()
-        {
-            /*
-            var options = new RestClientOptions("")
-            {
-                MaxTimeout = -1,
-            };
-            var client = new RestClient(options);
-            var request = new RestRequest("https://ngw.devices.sberbank.ru:9443/api/v2/oauth", Method.Post);
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddHeader("Accept", "application/json");
-            request.AddParameter("scope", "GIGACHAT_API_PERS");
-            RestResponse response = await client.ExecuteAsync(request);
-            Console.WriteLine(response.Content);
-            */
-        }
-
 
         #endregion
 
