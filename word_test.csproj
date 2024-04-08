@@ -232,9 +232,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TestRibbon.resx">
-      <DependentUpon>TestRibbon.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -247,12 +244,6 @@
     </Compile>
     <Compile Include="Ribbon.cs">
       <XmlRibbon>true</XmlRibbon>
-    </Compile>
-    <Compile Include="TestRibbon.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TestRibbon.Designer.cs">
-      <DependentUpon>TestRibbon.cs</DependentUpon>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>

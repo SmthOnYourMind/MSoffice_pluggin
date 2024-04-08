@@ -11,6 +11,7 @@ using Microsoft.Office.Interop.Word;
 using System.Threading.Tasks;
 using System.Net.Http;
 using RestSharp;
+using System.Net.Http.Headers;
 
 namespace word_test
 {
@@ -57,14 +58,20 @@ namespace word_test
 
         public async void SendPostRequest()
         {
-            var options = new RestClientOptions("") { MaxTimeout = -1 };
-            var client = new RestClient(options);
-            var request = new RestRequest("https://ngw.devices.sberbank.ru:9443/api/v2/oauth", Method.Post);
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddHeader("Accept", "application/json");
-            request.AddHeader("Authorization", "Basic bWFzdGFkZW40NkBnbWFpbC5jb206UXBtendvYWwxMA==");
-            RestResponse response = await client.ExecuteAsync(request);
-            Console.WriteLine(response.Content);
+            //3f05354f-1346-44c2-8f6c-1d34a03fc054      client id
+            //8f791d9d-10d6-4a86-b90c-7efed0d41240      client secret
+            //edbd3eac-c185-4112-880b-f8b1351c7f10      uuid
+            //M2YwNTM1NGYtMTM0Ni00NGMyLThmNmMtMWQzNGEwM2ZjMDU0OjhmNzkxZDlkLTEwZDYtNGE4Ni1iOTBjLTdlZmVkMGQ0MTI0MA==   Авторизационные данные
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://ngw.devices.sberbank.ru:9443/api/v2/oauth");
+            request.Headers.Add("Accept", "application/json");
+            request.Headers.Add("Authorization", "Basic 6a98f861-99b2-4931-9e60-9ed6fdc56f95");
+            var content = new StringContent(string.Empty);
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
+            request.Content = content;
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
         }
 
         public void GetToken(Office.IRibbonControl control)
