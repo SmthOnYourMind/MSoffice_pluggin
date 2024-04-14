@@ -8,10 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
+using GigaChatAdapter;
 using System.Threading.Tasks;
-using System.Net.Http;
-using RestSharp;
-using System.Net.Http.Headers;
 
 namespace word_test
 {
@@ -22,6 +20,7 @@ namespace word_test
 
         public Ribbon()
         {
+
         }
 
         #region IRibbonExtensibility Members
@@ -48,6 +47,8 @@ namespace word_test
 
             if (control.Id == "context_button1")
             {
+
+
                 currentRange.Text = "Переписанный текст (Было: " + current_selected + ")";
             }
             else if (control.Id == "context_button2")
@@ -56,22 +57,54 @@ namespace word_test
             }
         }
 
-        public async void SendPostRequest()
+        public void SendPostRequest()
         {
-            //3f05354f-1346-44c2-8f6c-1d34a03fc054      client id
-            //8f791d9d-10d6-4a86-b90c-7efed0d41240      client secret
-            //edbd3eac-c185-4112-880b-f8b1351c7f10      uuid
-            //M2YwNTM1NGYtMTM0Ni00NGMyLThmNmMtMWQzNGEwM2ZjMDU0OjhmNzkxZDlkLTEwZDYtNGE4Ni1iOTBjLTdlZmVkMGQ0MTI0MA==   Авторизационные данные
-            var client = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "https://ngw.devices.sberbank.ru:9443/api/v2/oauth");
-            request.Headers.Add("Accept", "application/json");
-            request.Headers.Add("Authorization", "Basic 6a98f861-99b2-4931-9e60-9ed6fdc56f95");
-            var content = new StringContent(string.Empty);
-            content.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
-            request.Content = content;
-            var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            Console.WriteLine(await response.Content.ReadAsStringAsync());
+            System.Threading.Tasks.Task.Run(async () => await RunGigaChat()).GetAwaiter().GetResult();
+        }
+
+        static async System.Threading.Tasks.Task RunGigaChat()
+        {
+            /*
+            // Ваш код здесь
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Console.InputEncoding = Encoding.GetEncoding(1251);
+            Console.OutputEncoding = Encoding.GetEncoding(1251);
+
+            string authData = "MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==";
+
+            GigaChatAdapter.Authorization auth = new GigaChatAdapter.Authorization(authData, GigaChatAdapter.Auth.RateScope.GIGACHAT_API_PERS);
+            var authResult = await auth.SendRequest();
+
+            if (authResult.AuthorizationSuccess)
+            {
+                Completion completion = new Completion();
+                Console.WriteLine("Напишите запрос к модели. В ином случае закройте окно, если дальнейшую работу с чатботом необходимо прекратить.");
+
+                while (true)
+                {
+                    var prompt = Console.ReadLine();
+                    await auth.UpdateToken(reserveTime: new TimeSpan(0, 1, 0));
+                    CompletionSettings settings = new CompletionSettings("GigaChat:latest", 2, null, 4, 1);
+                    var result = await completion.SendRequest(auth.LastResponse.GigaChatAuthorizationResponse?.AccessToken, prompt, true, settings);
+
+                    if (result.RequestSuccessed)
+                    {
+                        foreach (var it in result.GigaChatCompletionResponse.Choices)
+                        {
+                            Console.WriteLine(it.Message.Content);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine(result.ErrorTextIfFailed);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine(authResult.ErrorTextIfFailed);
+            }
+            */
         }
 
         public void GetToken(Office.IRibbonControl control)
@@ -82,8 +115,7 @@ namespace word_test
         public void GetRequest(Office.IRibbonControl control)
         {
             //SendPostRequest();
-
-            MessageBox.Show("Введите запрос");
+            //MessageBox.Show("Введите запрос");
         }
 
         #endregion
