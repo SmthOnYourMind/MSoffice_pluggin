@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "E:\\smth\\word_test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|e:\\smth\\word_test\\testapi\\testapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|solutionrelative:testapi\\testapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|e:\\smth\\word_test\\testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|solutionrelative:testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|e:\\smth\\word_test\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|e:\\smth\\word_test\\testapi\\gigachatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2935647A-DF19-4039-AC3C-8D00ABD91FC9}|TestAPI\\TestAPI.csproj|solutionrelative:testapi\\gigachatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -15,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:requestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|e:\\smth\\word_test\\requestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\requestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:requestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|e:\\smth\\word_test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +46,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestAPI",
+              "DocumentMoniker": "E:\\smth\\word_test\\TestAPI\\TestAPI.csproj",
+              "RelativeDocumentMoniker": "TestAPI\\TestAPI.csproj",
+              "ToolTip": "E:\\smth\\word_test\\TestAPI\\TestAPI.csproj",
+              "RelativeToolTip": "TestAPI\\TestAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-14T12:53:47.909Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "GigaChatClass.cs",
+              "DocumentMoniker": "E:\\smth\\word_test\\TestAPI\\GigaChatClass.cs",
+              "RelativeDocumentMoniker": "TestAPI\\GigaChatClass.cs",
+              "ToolTip": "E:\\smth\\word_test\\TestAPI\\GigaChatClass.cs",
+              "RelativeToolTip": "TestAPI\\GigaChatClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T12:53:20.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\smth\\word_test\\TestAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TestAPI\\Program.cs",
+              "ToolTip": "E:\\smth\\word_test\\TestAPI\\Program.cs",
+              "RelativeToolTip": "TestAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T12:52:44.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "app.config",
               "DocumentMoniker": "E:\\smth\\word_test\\app.config",
               "RelativeDocumentMoniker": "app.config",
@@ -50,16 +109,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "RequestForm.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\RequestForm.cs",
               "RelativeDocumentMoniker": "RequestForm.cs",
@@ -72,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "RequestForm.cs [Design]",
               "DocumentMoniker": "E:\\smth\\word_test\\RequestForm.cs",
               "RelativeDocumentMoniker": "RequestForm.cs",
@@ -84,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Ribbon.xml",
               "DocumentMoniker": "E:\\smth\\word_test\\Ribbon.xml",
               "RelativeDocumentMoniker": "Ribbon.xml",
@@ -97,26 +148,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Ribbon.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\Ribbon.cs",
               "RelativeDocumentMoniker": "Ribbon.cs",
               "ToolTip": "E:\\smth\\word_test\\Ribbon.cs",
               "RelativeToolTip": "Ribbon.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwEIAAAAOAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T15:50:21.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ThisAddIn.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\ThisAddIn.cs",
               "RelativeDocumentMoniker": "ThisAddIn.cs",
               "ToolTip": "E:\\smth\\word_test\\ThisAddIn.cs",
               "RelativeToolTip": "ThisAddIn.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T14:50:43.741Z",
               "EditorCaption": ""
