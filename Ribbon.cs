@@ -8,8 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
-using GigaChatAdapter;
+using GigaChatAdapterNetFramework;
+using TestNetFrameworkAPI;
 using System.Threading.Tasks;
+using System.Net.Http;
+using Task = System.Threading.Tasks.Task;
 
 namespace word_test
 {
@@ -54,8 +57,6 @@ namespace word_test
 
             if (control.Id == "context_button1")
             {
-
-
                 currentRange.Text = "Переписанный текст (Было: " + currentSelectedText + ")";
             }
             else if (control.Id == "context_button2")
@@ -64,11 +65,24 @@ namespace word_test
             }
         }
 
-        
-        
+        public async Task CallNet6ApiAsync()
+        {
+            using (var client = new HttpClient())
+            {
+                // Replace with your .NET 6 Web API URL
+                var url = "http://localhost:5000/api/your-endpoint";
+                var response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                }
+            }
+        }
+
 
         public void GetToken(Office.IRibbonControl control)
         {
+            Task.Run(async () => await TestNetFrameworkAPI.TestNetFrameworkAPI.Main()).GetAwaiter().GetResult();
             MessageBox.Show("Введите токен");
         }
 

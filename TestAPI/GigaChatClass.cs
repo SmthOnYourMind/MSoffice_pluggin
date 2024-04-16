@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Authorization = GigaChatAdapter.Authorization;
 
-namespace TestAPI
+namespace TestNetFrameworkAPI
 {
-    public class testRequ
+    public class TestRequestAPI
     {
 
         public static async Task Run(string text)

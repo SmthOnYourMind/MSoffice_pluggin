@@ -58,15 +58,6 @@
             "rid": "win"
           }
         }
-      },
-      "word_test/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/word_test.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/word_test.dll": {}
-        }
       }
     }
   },
@@ -148,17 +139,11 @@
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "word_test/1.0.0": {
-      "type": "project",
-      "path": "../word_test.csproj",
-      "msbuildProject": "../word_test.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "GigaChatAdapter >= 1.0.7",
-      "word_test >= 1.0.0"
+      "GigaChatAdapter >= 1.0.7"
     ]
   },
   "packageFolders": {
@@ -192,11 +177,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "E:\\smth\\word_test\\word_test.csproj": {
-              "projectPath": "E:\\smth\\word_test\\word_test.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -233,10 +214,6 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[6.0.29, 6.0.29]"
           },
           {

@@ -48,6 +48,11 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" version="9.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
@@ -578,6 +583,16 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Text.Encodings.Web" version="9.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Text.Json" version="9.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Text.RegularExpressions" version="4.1.1.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
@@ -675,6 +690,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>xsDxz6h5yXuU56YjwiPQYpI1B8ybFvz8PsYaPOJDqTk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GigaChatAdapterNetFramework.dll" size="21504">
+      <assemblyIdentity name="GigaChatAdapterNetFramework" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u8R1dcvypPBEe4NG48ZSuqqq4zdSuXUZRm7ztSLNXcg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -811,24 +838,36 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="word_test.dll" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestGigaChatAdapterNetFramework.exe" size="8192">
+      <assemblyIdentity name="TestGigaChatAdapterNetFramework" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EMaAUbGnBoahzxKsv12bNPmx/rNErMOYs2pPD4ujot8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="word_test.dll" size="19456">
       <assemblyIdentity name="word_test" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>H9OBv4CJtXWmtuKbqx/SMFOSXikyrAcdLFOBsTHnL14=</dsig:DigestValue>
+        <dsig:DigestValue>3qJ84sIMvFj56zY1AyfnXVEI9/S81uxBMba948/98UA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="word_test.dll.config" size="767">
+  <file name="word_test.dll.config" size="782">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Y7sh8tlAfQeICzOLhB1Q5uH3EOHx5p/IHOQshmdlid4=</dsig:DigestValue>
+      <dsig:DigestValue>lqyHvWDfUyA40fxxsO+01Jc5u+y+RP/iL4S6d04WpQk=</dsig:DigestValue>
     </hash>
   </file>
   <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
@@ -854,4 +893,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=DESKTOP-7896DJD\stas" issuerKeyHash="9b726323a5149448642b7ad7aa7a2adf0a99363c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Nnl6eXsGwjCzR/iRBAmco6MyPR3vSbcZJ+ROxU6GtUQ=</DigestValue></Reference></SignedInfo><SignatureValue>I34C6rFDJxG+cZNEy9y3R2OcItk3tWz84Vzfa3oONaMLbnNG5J+Xxpc8EjfKutHA0xN/vsxqRDQokkKrWOLZYAh5CYYS1UpcsDw+7FmNVWErqmouFZul3QJ3xNRhC+sUsahYL6wIFxlOupynacBO2FIWcdxX8ScE7U7JUG2fqoE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="44b5864ec54ee42719b749ef1d3d32a3a39c090491f847b330c2067b797a7936" Description="" Url=""><as:assemblyIdentity name="word_test.dll" version="1.0.0.0" publicKeyToken="192b50669c53e231" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7896DJD\stas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/ufXn30r+dRzMJC3KzfE7BNv9hU/+yMJQQXtZnIjG4g=</DigestValue></Reference></SignedInfo><SignatureValue>SdpDBjvj/+HBcyfv2kFJpOJudg9V7WS2T5hbtMxSaO++24ymqP0MNNYdHOVUHr14AIX8LTx4U6ngc/E4eb6rtWzxUKsL/C89/lhcDQon4LkrXQBv4X4eE10YnmBHW3kg1L6UW8K6Xfsf3x5WpK8AIGtqSQr8Ie+JHNCzu+0CVLo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVscF+h0ahYVD3DpOidtpHzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADcAOAA5ADYARABKAEQAXABzAHQAYQBzMB4XDTI0MDIyNjE0NTUzNFoXDTI1MDIyNTIwNTUzNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQA3ADgAOQA2AEQASgBEAFwAcwB0AGEAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAWfK/WGNGUk+LcfGoMJ+npV0Gq+kc70YSbBEwD6kjdH6m2ymaxNGMHAFmpkZh/DBSnx2VCpXa4LrT1PvIFQsG7yVTUBQflxHbyfh+vfAMGgoO8SraAJMAc1QnzbzrroTV1cBMFq0bKmwE5OvnI9Sgo8DVs/VuQ3UQt2Hb+2evNYQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-7896DJD\stas" issuerKeyHash="9b726323a5149448642b7ad7aa7a2adf0a99363c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VSU3AabMdP5yklmW0PgvHHs8KwGvZcxmEjRRIUu6FiM=</DigestValue></Reference></SignedInfo><SignatureValue>jtaU56l12JItA5DNIGd3FcC5e5aVYwBx2mmMYjvCSJLKmrIOsmr97lOBV0CJtKtnsIcUswi4pVVIH8YYrY4D1cdsrCx+n+0SwPMfRTCUxbCTgV70nF/vw9F/OtGgAAxiCOy2PA7xkT9jTS83/HB9WxDp74F+VOpWC4V7P475Bd8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2316ba4b2151341266cc65af012b3c7b1c2ff8d096599272fe74cca601372555" Description="" Url=""><as:assemblyIdentity name="word_test.dll" version="1.0.0.0" publicKeyToken="192b50669c53e231" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7896DJD\stas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lJIAH3RpcY5pmY0yIGhTGkpWjIKvTNPfW+GnXSNjpFQ=</DigestValue></Reference></SignedInfo><SignatureValue>M+v4CFvXGyoIaja67rBBhIYDHOwlA73x8UcIJKkvUNnb29EKof8ZnfqqThy20Q6cLxKx0DYYB/c3WUBWKj3NRN+yCh7IqMGAN5v/Fb/uBd/8lj7UDQo2zmsNw1GAkNEgHCVb5O6QmDeGiJF8WHUd4bIh73dG1sW6SnkjQSMCeEk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVscF+h0ahYVD3DpOidtpHzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADcAOAA5ADYARABKAEQAXABzAHQAYQBzMB4XDTI0MDIyNjE0NTUzNFoXDTI1MDIyNTIwNTUzNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQA3ADgAOQA2AEQASgBEAFwAcwB0AGEAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAWfK/WGNGUk+LcfGoMJ+npV0Gq+kc70YSbBEwD6kjdH6m2ymaxNGMHAFmpkZh/DBSnx2VCpXa4LrT1PvIFQsG7yVTUBQflxHbyfh+vfAMGgoO8SraAJMAc1QnzbzrroTV1cBMFq0bKmwE5OvnI9Sgo8DVs/VuQ3UQt2Hb+2evNYQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

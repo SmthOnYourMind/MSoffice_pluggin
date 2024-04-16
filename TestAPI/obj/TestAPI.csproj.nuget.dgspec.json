@@ -31,11 +31,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "E:\\smth\\word_test\\word_test.csproj": {
-                "projectPath": "E:\\smth\\word_test\\word_test.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -75,10 +71,6 @@
               "version": "[6.0.29, 6.0.29]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.29, 6.0.29]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[6.0.29, 6.0.29]"
             },
@@ -94,21 +86,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "E:\\smth\\word_test\\word_test.csproj": {
-      "restore": {
-        "projectUniqueName": "E:\\smth\\word_test\\word_test.csproj",
-        "projectName": "word_test",
-        "projectPath": "E:\\smth\\word_test\\word_test.csproj",
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
       }
     }
   }
