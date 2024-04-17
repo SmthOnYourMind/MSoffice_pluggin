@@ -12,11 +12,11 @@ namespace TestNetFrameworkAPI
     public class TestRequestAPI
     {
 
-        public static async Task Run(string text)
+        public static async Task<string> Run(string text)
         {
-            Console.WriteLine("анлаки");
+            //Console.WriteLine("анлаки");
             //Настройка для работы консоли с кириллицей
-            //Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             //Console.InputEncoding = Encoding.GetEncoding(1251);
             //Console.OutputEncoding = Encoding.GetEncoding(1251);
 
@@ -27,17 +27,17 @@ namespace TestNetFrameworkAPI
             Authorization auth = new Authorization(authData, GigaChatAdapterNetFramework.Auth.RateScope.GIGACHAT_API_PERS);
             var authResult = await auth.SendRequest();
 
+            string recieved_message = "";
             if (authResult.AuthorizationSuccess)
             {
-                Console.WriteLine("анлаки");
+                //Console.WriteLine("анлаки");
                 Completion completion = new Completion();
-                Console.WriteLine("запрос"); //RU
+                //Console.WriteLine("запрос"); //RU
 
                 while (true)
                 {
                     //Чтение промпта с консоли
                     var prompt = text;
-
                     //Обновление токена, если он просрочился (запас времени - 1 минута до просрочки)
                     await auth.UpdateToken(reserveTime: new TimeSpan(0, 1, 0));
 
@@ -50,19 +50,26 @@ namespace TestNetFrameworkAPI
                     {
                         foreach (var it in result.GigaChatCompletionResponse.Choices)
                         {
-                            Console.WriteLine(it.Message.Content);
+                            //Console.WriteLine(it.Message.Content);
+                            recieved_message = it.Message.Content;
                         }
                     }
                     else
                     {
-                        Console.WriteLine(result.ErrorTextIfFailed);
+                        //Console.WriteLine(result.ErrorTextIfFailed);
+                        recieved_message = result.ErrorTextIfFailed;
                     }
+                    //break;
+                    return recieved_message;
                 }
             }
             else
             {
-                Console.WriteLine(authResult.ErrorTextIfFailed);
+                //Console.WriteLine(authResult.ErrorTextIfFailed);
+                recieved_message = authResult.ErrorTextIfFailed;
             }
+
+            return "error";
         }
     }
 }

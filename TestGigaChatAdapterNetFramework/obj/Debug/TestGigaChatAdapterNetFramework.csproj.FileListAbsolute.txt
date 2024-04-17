@@ -3,7 +3,6 @@ E:\smth\TestGigaChatAdapterNetFramework\obj\Debug\TestGigaChatAdapterNetFramewor
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\TestGigaChatAdapterNetFramework.exe.config
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\TestGigaChatAdapterNetFramework.exe
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\TestGigaChatAdapterNetFramework.pdb
-E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\GigaChatAdapterNetFramework.dll
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\System.Buffers.dll
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\System.Memory.dll
 E:\smth\TestGigaChatAdapterNetFramework\bin\Debug\System.Numerics.Vectors.dll

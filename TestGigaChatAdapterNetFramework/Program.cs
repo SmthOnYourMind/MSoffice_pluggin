@@ -9,7 +9,7 @@ namespace TestNetFrameworkAPI
     {
         public static async Task Main()
         {
-            await TestRequestAPI.Run("привет");
+            await TestRequestAPI.Run("игра смута это");
         }
     }
 }

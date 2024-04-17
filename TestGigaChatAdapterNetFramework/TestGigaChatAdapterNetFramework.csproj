@@ -41,10 +41,6 @@
     <Compile Include="TestRequestAPI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="GigaChatAdapterNetFramework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\TestGigaChatAdapterNetFramework\bin\Debug\GigaChatAdapterNetFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>C:\Users\stas\Desktop\GigaChatAdapter-master\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -62,6 +58,12 @@
     <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encoding.CodePages.8.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GigaChatAdapterNetFramework\GigaChatAdapterNetFramework.csproj">
+      <Project>{6ac67fee-37c7-484e-b118-e8e8568a468f}</Project>
+      <Name>GigaChatAdapterNetFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
