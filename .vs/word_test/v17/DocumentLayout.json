@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "E:\\smth\\word_test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|e:\\smth\\word_test\\ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:ribbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|e:\\smth\\word_test\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,79 +15,12 @@
       "RelativeMoniker": "D:0:0:{642EEBED-6360-425C-A334-6DABBF8D4682}|TestGigaChatAdapterNetFramework\\TestGigaChatAdapterNetFramework.csproj|solutionrelative:testgigachatadapternetframework\\testrequestapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{642EEBED-6360-425C-A334-6DABBF8D4682}|TestGigaChatAdapterNetFramework\\TestGigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\testgigachatadapternetframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{642EEBED-6360-425C-A334-6DABBF8D4682}|TestGigaChatAdapterNetFramework\\TestGigaChatAdapterNetFramework.csproj|solutionrelative:testgigachatadapternetframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\gigachatcompletionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\gigachatcompletionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|e:\\smth\\word_test\\gigachatadapternetframework\\auth\\authorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\auth\\authorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\auth\\authorizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\auth\\authorizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\gigachatusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\gigachatusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\gigachatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\gigachatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\gigachatcompletionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\gigachatcompletionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\gigachatchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\gigachatchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\completionsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\completionsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\completionrolesenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\completionrolesenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\completionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\completionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\completionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\completionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\completions\\completion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\completions\\completion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\auth\\ratescopeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\auth\\ratescopeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\auth\\gigachatauthorizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\auth\\gigachatauthorizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\gigachatadapternetframework\\auth\\authorizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC67FEE-37C7-484E-B118-E8E8568A468F}|GigaChatAdapterNetFramework\\GigaChatAdapterNetFramework.csproj|solutionrelative:gigachatadapternetframework\\auth\\authorizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\smth\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|E:\\smth\\word_test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B99D6D8D-503B-436B-9262-7B7F89D5236C}|word_test.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{642EEBED-6360-425C-A334-6DABBF8D4682}|TestGigaChatAdapterNetFramework\\TestGigaChatAdapterNetFramework.csproj|E:\\smth\\word_test\\testgigachatadapternetframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{642EEBED-6360-425C-A334-6DABBF8D4682}|TestGigaChatAdapterNetFramework\\TestGigaChatAdapterNetFramework.csproj|solutionrelative:testgigachatadapternetframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -93,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,253 +42,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GigaChatCompletionRequest.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionRequest.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionRequest.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionRequest.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:31.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\TestGigaChatAdapterNetFramework\\Program.cs",
               "RelativeDocumentMoniker": "TestGigaChatAdapterNetFramework\\Program.cs",
               "ToolTip": "E:\\smth\\word_test\\TestGigaChatAdapterNetFramework\\Program.cs",
               "RelativeToolTip": "TestGigaChatAdapterNetFramework\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T09:32:01.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TestRequestAPI.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\TestGigaChatAdapterNetFramework\\TestRequestAPI.cs",
               "RelativeDocumentMoniker": "TestGigaChatAdapterNetFramework\\TestRequestAPI.cs",
               "ToolTip": "E:\\smth\\word_test\\TestGigaChatAdapterNetFramework\\TestRequestAPI.cs",
               "RelativeToolTip": "TestGigaChatAdapterNetFramework\\TestRequestAPI.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwD4AAAAsAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T09:32:02.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Authorization.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAIwDoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T10:33:10.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GigaChatChoice.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatChoice.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\GigaChatChoice.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatChoice.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\GigaChatChoice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:27.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CompletionSettings.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionSettings.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\CompletionSettings.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionSettings.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\CompletionSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:23.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthorizationResponse.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\AuthorizationResponse.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Auth\\AuthorizationResponse.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\AuthorizationResponse.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Auth\\AuthorizationResponse.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAawB8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:06.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Ribbon.xml",
+              "DocumentMoniker": "E:\\smth\\word_test\\Ribbon.xml",
+              "RelativeDocumentMoniker": "Ribbon.xml",
+              "ToolTip": "E:\\smth\\word_test\\Ribbon.xml",
+              "RelativeToolTip": "Ribbon.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-21T12:47:51.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Ribbon.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\Ribbon.cs",
               "RelativeDocumentMoniker": "Ribbon.cs",
               "ToolTip": "E:\\smth\\word_test\\Ribbon.cs",
               "RelativeToolTip": "Ribbon.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwDQAAAAJAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwF0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T15:50:21.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GigaChatCompletionResponse.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionResponse.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionResponse.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionResponse.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\GigaChatCompletionResponse.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:41.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GigaChatMessage.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatMessage.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\GigaChatMessage.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatMessage.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\GigaChatMessage.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:47.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GigaChatUsage.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatUsage.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\GigaChatUsage.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\GigaChatUsage.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\GigaChatUsage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:49.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CompletionRolesEnum.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionRolesEnum.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\CompletionRolesEnum.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionRolesEnum.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\CompletionRolesEnum.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:20.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CompletionResponse.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionResponse.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\CompletionResponse.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionResponse.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\CompletionResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:17.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CompletionRequest.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionRequest.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\CompletionRequest.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\CompletionRequest.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\CompletionRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:14.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Completion.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\Completion.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Completions\\Completion.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Completions\\Completion.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Completions\\Completion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:11.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RateScopeEnum.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\RateScopeEnum.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Auth\\RateScopeEnum.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\RateScopeEnum.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Auth\\RateScopeEnum.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:09.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GigaChatAuthorizationResponse.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\GigaChatAuthorizationResponse.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Auth\\GigaChatAuthorizationResponse.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\GigaChatAuthorizationResponse.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Auth\\GigaChatAuthorizationResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:08.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AuthorizationRequest.cs",
-              "DocumentMoniker": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\AuthorizationRequest.cs",
-              "RelativeDocumentMoniker": "GigaChatAdapterNetFramework\\Auth\\AuthorizationRequest.cs",
-              "ToolTip": "E:\\smth\\word_test\\GigaChatAdapterNetFramework\\Auth\\AuthorizationRequest.cs",
-              "RelativeToolTip": "GigaChatAdapterNetFramework\\Auth\\AuthorizationRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:04.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Authorization.cs",
-              "DocumentMoniker": "E:\\smth\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "RelativeDocumentMoniker": "..\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "ToolTip": "E:\\smth\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "RelativeToolTip": "..\\GigaChatAdapterNetFramework\\Auth\\Authorization.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAowDUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T10:02:59.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "app.config",
-              "DocumentMoniker": "E:\\smth\\word_test\\app.config",
-              "RelativeDocumentMoniker": "app.config",
-              "ToolTip": "E:\\smth\\word_test\\app.config",
-              "RelativeToolTip": "app.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-14T10:50:08.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 3,
               "Title": "ThisAddIn.cs",
               "DocumentMoniker": "E:\\smth\\word_test\\ThisAddIn.cs",
               "RelativeDocumentMoniker": "ThisAddIn.cs",
@@ -359,7 +102,8 @@
               "RelativeToolTip": "ThisAddIn.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T14:50:43.741Z"
+              "WhenOpened": "2024-02-26T14:50:43.741Z",
+              "EditorCaption": ""
             }
           ]
         }

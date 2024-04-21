@@ -4,8 +4,9 @@
         <tabs>
             <tab idMso="TabAddIns" label="Gigachat">
                 <group id="group1" label="Основные функции">
-                    <button id="token_button" onAction="GetToken" label="Вставить токен" showImage="false" />
-                    <button id="request_button" onAction="GetRequest" label="Сгенерировать текст по запросу" showImage="false" />
+                    <button id="ribbon_button1" onAction="InsertToken" label="Вставить свой токен" showImage="false" />
+                    <button id="ribbon_button2" onAction="InsertRequest" label="Сгенерировать текст по запросу" showImage="false" />
+                    <button id="ribbon_button3" onAction="GetInstruction" label="Показать инструкцию" showImage="false" />
                 </group>
             </tab>
         </tabs>
@@ -14,6 +15,8 @@
     <contextMenu idMso="ContextMenuText">
       <button id="context_button1" label="Gigachat: Переписывание выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
       <button id="context_button2" label="Gigachat: Дополнение выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button3" label="Gigachat: Краткое содержание текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button4" label="Gigachat: Перевод текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
       <menu id="submenu" label="Gigachat: Изменить стиль текста" >
         <button id="submenu_button1" label="Деловой" />
         <button id="submenu_button2" label="Научный" />

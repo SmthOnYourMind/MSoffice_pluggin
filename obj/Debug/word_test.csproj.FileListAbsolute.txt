@@ -1,6 +1,5 @@
 E:\smth\word_test\obj\Debug\word_test.csproj.AssemblyReference.cache
 E:\smth\word_test\obj\Debug\word_test.Properties.Resources.resources
-E:\smth\word_test\obj\Debug\word_test.RequestForm.resources
 E:\smth\word_test\obj\Debug\word_test.csproj.GenerateResource.cache
 E:\smth\word_test\obj\Debug\word_test.csproj.CoreCompileInputs.cache
 E:\smth\word_test\bin\Debug\word_test.dll.config

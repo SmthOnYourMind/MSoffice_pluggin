@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
-//using GigaChatAdapterNetFramework;
 using TestNetFrameworkAPI;
 using System.Threading.Tasks;
 using System.Net.Http;
@@ -56,23 +55,38 @@ namespace word_test
             Microsoft.Office.Interop.Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
 
             currentSelectedText = currentRange.Text;
-
+            string result = "";
             if (control.Id == "context_button1")
             {
-                currentRange.Text = "Переписанный текст (Было: " + currentSelectedText + ")";
+                result = Task.Run(async () => await TestRequestAPI.Run("Перепеши следующий текст по другому\n" + currentSelectedText)).GetAwaiter().GetResult();
             }
             else if (control.Id == "context_button2")
             {
-                currentRange.Text = "Дополненный текст (Было: " + currentSelectedText + ")";
+                result = Task.Run(async () => await TestRequestAPI.Run("Дополни следущий текст\n" + currentSelectedText)).GetAwaiter().GetResult();
+                //currentRange.Text = "Дополненный текст (Было: " + currentSelectedText + ")";
             }
+            else if (control.Id == "context_button3")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Дай краткое содержание следующего текста\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+            else if (control.Id == "context_button4")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Переведи следующий текст на английский\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+            else if (control.Id == "context_button5")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Переведи следующий текст на английский\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+
+            currentRange.Text = result;
         }
 
         public void GetToken(Office.IRibbonControl control)
         {
-            MessageBox.Show("Введите токен");
+            MessageBox.Show("Введите свой токен");
 
             string result;
-            result = Task.Run(async () => await TestRequestAPI.Run("игра смута это")).GetAwaiter().GetResult();
+            result = Task.Run(async () => await TestRequestAPI.Run("кто такой абоба")).GetAwaiter().GetResult();
 
             MessageBox.Show(result);
         }
