@@ -11,12 +11,16 @@ namespace TestNetFrameworkAPI
 {
     public class TestRequestAPI
     {
+        //аутентификационные данные из личного кабинета
+        static string authData = "MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==";
+
+        public static void ChangeToken(string new_token)
+        {
+            authData = new_token;
+        }
 
         public static async Task<string> Run(string text)
         {
-            //аутентификационные данные из личного кабинета
-            string authData = "MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==";
-
             //Запуск авторизации в гигачате
             Authorization auth = new Authorization(authData, GigaChatAdapterNetFramework.Auth.RateScope.GIGACHAT_API_PERS);
             var authResult = await auth.SendRequest();

@@ -63,7 +63,6 @@ namespace word_test
             else if (control.Id == "context_button2")
             {
                 result = Task.Run(async () => await TestRequestAPI.Run("Дополни следущий текст\n" + currentSelectedText)).GetAwaiter().GetResult();
-                //currentRange.Text = "Дополненный текст (Было: " + currentSelectedText + ")";
             }
             else if (control.Id == "context_button3")
             {
@@ -75,25 +74,42 @@ namespace word_test
             }
             else if (control.Id == "context_button5")
             {
-                result = Task.Run(async () => await TestRequestAPI.Run("Переведи следующий текст на английский\n" + currentSelectedText)).GetAwaiter().GetResult();
+                result = Task.Run(async () => await TestRequestAPI.Run("Переведи следующий текст на русский\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+            else if (control.Id == "submenu_button_1")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Перепиши следующий текст в деловом стиле\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+            else if (control.Id == "submenu_button_2")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Перепиши следующий текст в научном стиле\n" + currentSelectedText)).GetAwaiter().GetResult();
+            }
+            else if (control.Id == "submenu_button_3")
+            {
+                result = Task.Run(async () => await TestRequestAPI.Run("Перепиши следующий текст в разговорном стиле\n" + currentSelectedText)).GetAwaiter().GetResult();
             }
 
             currentRange.Text = result;
         }
 
-        public void GetToken(Office.IRibbonControl control)
+        public void InsertToken(Office.IRibbonControl control)
         {
             MessageBox.Show("Введите свой токен");
-
-            string result;
-            result = Task.Run(async () => await TestRequestAPI.Run("кто такой абоба")).GetAwaiter().GetResult();
-
-            MessageBox.Show(result);
+            string new_token = "";
+            TestRequestAPI.ChangeToken(new_token);
         }
 
-        public void GetRequest(Office.IRibbonControl control)
+        public void SendRequest(Office.IRibbonControl control)
         {
             MessageBox.Show("Введите запрос");
+            string request = "";
+            string result = Task.Run(async () => await TestRequestAPI.Run(request)).GetAwaiter().GetResult();
+
+        }
+
+        public void GetInstruction(Office.IRibbonControl control)
+        {
+            MessageBox.Show("Инструкция по поиску токена GigaChat:\n1) ...\n2) ...\n3) ...");
         }
 
         #endregion
