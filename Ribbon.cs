@@ -12,6 +12,7 @@ using TestNetFrameworkAPI;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Task = System.Threading.Tasks.Task;
+using Microsoft.VisualBasic;
 
 namespace word_test
 {
@@ -94,17 +95,18 @@ namespace word_test
 
         public void InsertToken(Office.IRibbonControl control)
         {
-            MessageBox.Show("Введите свой токен");
-            string new_token = "";
-            TestRequestAPI.ChangeToken(new_token);
+            string input = Interaction.InputBox("Введите свой токен", "Ввод токена", "например: hjfdsgfsgwer7324y732yd623", 300, 400);
+
+            TestRequestAPI.ChangeToken(input);
         }
 
         public void SendRequest(Office.IRibbonControl control)
         {
-            MessageBox.Show("Введите запрос");
-            string request = "";
-            string result = Task.Run(async () => await TestRequestAPI.Run(request)).GetAwaiter().GetResult();
+            string input = Interaction.InputBox("Введите свой запрос", "Ввод запроса", "например: Какие спутники есть у Сатурна", 300, 400);
 
+            string result = Task.Run(async () => await TestRequestAPI.Run(input)).GetAwaiter().GetResult();
+
+            MessageBox.Show(result);
         }
 
         public void GetInstruction(Office.IRibbonControl control)

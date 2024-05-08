@@ -5,7 +5,7 @@
             <tab idMso="TabAddIns" label="Gigachat">
                 <group id="group1" label="Основные функции">
                     <button id="ribbon_button1" onAction="InsertToken" label="Вставить свой токен" showImage="false" />
-                    <button id="ribbon_button2" onAction="InsertRequest" label="Сгенерировать текст по запросу" showImage="false" />
+                    <button id="ribbon_button2" onAction="SendRequest" label="Сгенерировать текст по запросу" showImage="false" />
                     <button id="ribbon_button3" onAction="GetInstruction" label="Показать инструкцию" showImage="false" />
                 </group>
             </tab>

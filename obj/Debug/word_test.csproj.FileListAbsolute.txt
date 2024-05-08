@@ -37,3 +37,4 @@ E:\smth\word_test\bin\Debug\GigaChatAdapterNetFramework.pdb
 E:\smth\word_test\bin\Debug\GigaChatAdapterNetFramework.dll.config
 E:\smth\word_test\bin\Debug\TestGigaChatAdapterNetFramework.dll
 E:\smth\word_test\bin\Debug\TestGigaChatAdapterNetFramework.dll.config
+E:\smth\word_test\obj\Debug\word_test.csproj.ResolveComReference.cache

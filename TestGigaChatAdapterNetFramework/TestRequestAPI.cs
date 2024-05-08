@@ -11,8 +11,10 @@ namespace TestNetFrameworkAPI
 {
     public class TestRequestAPI
     {
+        // MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==
+
         //аутентификационные данные из личного кабинета
-        static string authData = "MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==";
+        static string authData = null;
 
         public static void ChangeToken(string new_token)
         {
