@@ -96,8 +96,11 @@ namespace word_test
         public void InsertToken(Office.IRibbonControl control)
         {
             string input = Interaction.InputBox("Введите свой токен", "Ввод токена", "например: hjfdsgfsgwer7324y732yd623", 300, 400);
-
-            TestRequestAPI.ChangeToken(input);
+            // MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==
+            if (input.Length == 100)
+                TestRequestAPI.ChangeToken(input);
+            else
+                MessageBox.Show("Формат токена неверный");
         }
 
         public void SendRequest(Office.IRibbonControl control)

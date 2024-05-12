@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGigaChatAdapterNetFrame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaChatAdapterNetFramework", "GigaChatAdapterNetFramework\GigaChatAdapterNetFramework.csproj", "{6AC67FEE-37C7-484E-B118-E8E8568A468F}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GigaChat setup", "GigaChat setup\GigaChat setup.vdproj", "{A5DCF176-99AC-44A5-B593-C708DA56A25A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,8 +27,6 @@ Global
 		{6AC67FEE-37C7-484E-B118-E8E8568A468F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AC67FEE-37C7-484E-B118-E8E8568A468F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AC67FEE-37C7-484E-B118-E8E8568A468F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5DCF176-99AC-44A5-B593-C708DA56A25A}.Debug|Any CPU.ActiveCfg = Debug
-		{A5DCF176-99AC-44A5-B593-C708DA56A25A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
