@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2009/07/customui" loadImage="GetImage">
     <ribbon>
         <tabs>
             <tab idMso="TabAddIns" label="Gigachat">
+              <group id="group0">
+                <button id="idLogo" image="Logo" size="large"/>
+              </group>
                 <group id="group1" label="Основные функции">
                     <button id="ribbon_button1" onAction="InsertToken" label="Вставить свой токен" showImage="false" />
                     <button id="ribbon_button2" onAction="SendRequest" label="Сгенерировать текст по запросу" showImage="false" />
-                    <button id="ribbon_button3" onAction="GetInstruction" label="Показать инструкцию" showImage="false" />
+                    <button id="ribbon_button3" onAction="ShowInstruction" label="Показать инструкцию" showImage="false" />
+                    <button id="ribbon_button4" onAction="InsertDefaultToken" label="Вставить универсальный токен" showImage="false" />
+                </group>
+                <group id="group2" label="Прочее">
+                    <button id="ribbon_button5" onAction="ShowSertificates" label="Сертификаты Минцифры" showImage="false" />
+                    <button id="ribbon_button6" onAction="ShowHelp" label="Помощь" showImage="false" />
+                    <button id="ribbon_button7" onAction="ShowAbout" label="О нас" showImage="false" />
                 </group>
             </tab>
         </tabs>
@@ -23,12 +32,6 @@
         <button id="submenu_button2" label="Научный" onAction="GetButtonID"/>
         <button id="submenu_button3" label="Разговорный" onAction="GetButtonID"/>
       </menu>
-      <gallery id="gallery" label="Gigachat: Генерация текста по эмоджи">
-        <item id="item1" imageMso="HappyFace" />
-        <item id="item2" imageMso="SadFace" />
-        <item id="item3" imageMso="HappyFace" />
-        <item id="item4" imageMso="SadFace" />
-      </gallery>
     </contextMenu>
   </contextMenus>
 </customUI>

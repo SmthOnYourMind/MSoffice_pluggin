@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Task = System.Threading.Tasks.Task;
 using Microsoft.VisualBasic;
+using System.Diagnostics;
 
 namespace word_test
 {
@@ -20,8 +21,8 @@ namespace word_test
     public class Ribbon : Office.IRibbonExtensibility
     {
         public static string recieved_req_message;
-
         private static string currentSelectedText;
+        public static bool is_installed_cert = false;
 
         public static string GetCurrentSelected()
         {
@@ -53,6 +54,17 @@ namespace word_test
         }
         public void GetButtonID(Office.IRibbonControl control)
         {
+            if (TestRequestAPI.GetToken() == "")
+            {
+                MessageBox.Show("Сначала введите токен");
+                return;
+            }
+            if (TestRequestAPI.GetToken().Length != 100)
+            {
+                MessageBox.Show("Формат токена неверный");
+                return;
+            }
+
             Microsoft.Office.Interop.Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
 
             currentSelectedText = currentRange.Text;
@@ -95,7 +107,7 @@ namespace word_test
 
         public void InsertToken(Office.IRibbonControl control)
         {
-            string input = Interaction.InputBox("Введите свой токен", "Ввод токена", "например: hjfdsgfsgwer7324y732yd623", 300, 400);
+            string input = Interaction.InputBox("Введите свой токен", "Ввод токена", "Длина токена должна быть 100 символов", 500, 700);
             // MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==
             if (input.Length == 100)
                 TestRequestAPI.ChangeToken(input);
@@ -105,16 +117,63 @@ namespace word_test
 
         public void SendRequest(Office.IRibbonControl control)
         {
-            string input = Interaction.InputBox("Введите свой запрос", "Ввод запроса", "например: Какие спутники есть у Сатурна", 300, 400);
+            if (TestRequestAPI.GetToken() == "")
+            {
+                MessageBox.Show("Сначала введите токен");
+                return;
+            }
+            if (TestRequestAPI.GetToken().Length != 100)
+            {
+                MessageBox.Show("Формат токена неверный");
+                return;
+            }
 
+            string input = Interaction.InputBox("Введите свой запрос", "Ввод запроса", "Например: Какие спутники есть у Сатурна", 500, 700);
             string result = Task.Run(async () => await TestRequestAPI.Run(input)).GetAwaiter().GetResult();
 
             MessageBox.Show(result);
         }
 
-        public void GetInstruction(Office.IRibbonControl control)
+        public void ShowInstruction(Office.IRibbonControl control)
         {
             MessageBox.Show("Инструкция по поиску токена GigaChat:\n1) ...\n2) ...\n3) ...");
+        }
+
+        public void ShowSertificates(Office.IRibbonControl control)
+        {
+            var result = MessageBox.Show("Перейти на сайт https://www.gosuslugi.ru/crt чтобы скачать сертификаты минцифры?",
+                "", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Process.Start("https://www.gosuslugi.ru/crt");
+            }
+        }
+
+        public void ShowHelp(Office.IRibbonControl control)
+        {
+            MessageBox.Show("Помощь: ");
+        }
+
+        public void ShowAbout(Office.IRibbonControl control)
+        {
+            MessageBox.Show("AI плагин для Microsoft Word на основе Gigachat API\nВерсия: 1.0.0.0\n(C) 2024 Plague-in corp");
+        }
+
+        public void InsertDefaultToken(Office.IRibbonControl control)
+        {
+            var result = MessageBox.Show("Вставить токен по умолчанию?\n(Он доступен всем пользователям поэтому может закончится в любое время)",
+                "", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                TestRequestAPI.ChangeToken("MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==");
+            }
+        }
+
+        public System.Drawing.Image GetImage(string imageName)
+        {
+            return (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject(imageName);
         }
 
         #endregion

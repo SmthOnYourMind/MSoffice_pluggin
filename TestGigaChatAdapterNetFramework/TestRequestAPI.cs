@@ -16,6 +16,11 @@ namespace TestNetFrameworkAPI
         //аутентификационные данные из личного кабинета
         static string authData = null;
 
+        public static string GetToken()
+        {
+            return authData;
+        }
+
         public static void ChangeToken(string new_token)
         {
             authData = new_token;
