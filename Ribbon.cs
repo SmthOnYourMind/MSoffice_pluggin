@@ -25,6 +25,7 @@ namespace word_test
         private static string currentSelectedText;
         public static bool is_installed_cert = false;
 
+        private static string default_token = "MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmU5NjhhZWQ4LTFhNTItNDYwOS1iM2Q2LWZhNzhlMzQ5NjM4OA==";
         public static string GetCurrentSelected()
         {
             return currentSelectedText;
@@ -109,7 +110,7 @@ namespace word_test
         public void InsertToken(Office.IRibbonControl control)
         {
             string input = Interaction.InputBox("Введите свой токен", "Ввод токена", "Длина токена должна быть 100 символов", 500, 700);
-            // MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==
+            
             if (input.Length == 100)
                 TestRequestAPI.ChangeToken(input);
             else
@@ -201,7 +202,7 @@ namespace word_test
 
         public void ShowAbout(Office.IRibbonControl control)
         {
-            MessageBox.Show("AI плагин для Microsoft Word на основе Gigachat API\nВерсия: 1.0.0.0\n(C) 2024 Plague-in corp");
+            MessageBox.Show("AI плагин для Microsoft Word на основе Gigachat API\nВерсия: 1.0.0.2\n(C) 2024 Plague-in corp");
         }
 
         public void InsertDefaultToken(Office.IRibbonControl control)
@@ -211,7 +212,7 @@ namespace word_test
 
             if (result == DialogResult.Yes)
             {
-                TestRequestAPI.ChangeToken("MTk4NGVhNDMtNzdmZi00MjYwLTg1ODQtOTFlZWRkNzZkYjRlOmE2N2FhZDA1LTRjM2EtNDg2Ni04M2U0LWRiYjM3NWZiY2Y3Yw==");
+                TestRequestAPI.ChangeToken(default_token);
             }
         }
 
