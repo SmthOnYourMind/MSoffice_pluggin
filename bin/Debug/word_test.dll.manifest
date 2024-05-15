@@ -14,16 +14,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
-          requestedExecutionLevel node with one of the following.
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
-         compatibility then delete the requestedExecutionLevel node.
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -701,7 +701,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pfxkLxNMScJriRq7VAA/99aknHpkdRS2De8YjrwHURY=</dsig:DigestValue>
+        <dsig:DigestValue>verVRM/DeHwGpK7TgWxdAzpq6OYzWoGT3ANX/md4Vk8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -845,19 +845,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mHngUCtjZHzO0xUpWp4Csg+wVTb6EnW2E8TBqtCSs+8=</dsig:DigestValue>
+        <dsig:DigestValue>omBGO84Jen/jKmKNUB/KUf3p1J4BEwSK4a+E59+455c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="word_test.dll" size="28672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="word_test.dll" size="30208">
       <assemblyIdentity name="word_test" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w+Pyb81FPoLQtd7KlThx9M2Db9xMwtBgJHrSpnEqMq8=</dsig:DigestValue>
+        <dsig:DigestValue>W48gKyWmGDOBEM9+itWqNgg1wEvZ+EBmIgxj1NFlDw8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -891,4 +891,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=DESKTOP-7896DJD\stas" issuerKeyHash="9b726323a5149448642b7ad7aa7a2adf0a99363c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iZf9K9w63sEyGM2Yi9a8uaT6xHthj4k1lXk7Li9qY6w=</DigestValue></Reference></SignedInfo><SignatureValue>fkdQqtRUPu/9JZlRGAn4FanaKzuPwjTGQ87Yw/fSWaOrC6m2Nb84A2igKjpAMSWuWXzWDH3bW7xnYp/BgWyfcfhtZsfAbMrSjpBV0qJjTsLFRfmewzaiW7bgGzkZhKVbJOyZD2eYlzJe5SstbIDb4lxN7Z55EUnWK1BmVfF1Pds=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ac636a2f2e3b799535898f617bc4faa4b9bcd68b98cd1832c1de3adc2bfd9789" Description="" Url=""><as:assemblyIdentity name="word_test.dll" version="1.0.0.2" publicKeyToken="192b50669c53e231" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7896DJD\stas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4c2/TCW05NK4YPCf+bU9xFX0vfrBN6x7Iz66VqydPbQ=</DigestValue></Reference></SignedInfo><SignatureValue>bIaJojyDStuzHiDOzoZCvpZV2SQ7lej8Evdw+ms7vZc0YLo9tTIudMcXUyMLKNoF7L1jSlran4QWLY7IPklhzm3sjZ1QSmLDbmRBcOZuP0/GRFzstPZkcl0QZ/qQ/QS90aWLYwg2Ss/OZRAQj4U+yg4PqOB+AFA9eTQBqZM+YLQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVscF+h0ahYVD3DpOidtpHzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADcAOAA5ADYARABKAEQAXABzAHQAYQBzMB4XDTI0MDIyNjE0NTUzNFoXDTI1MDIyNTIwNTUzNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQA3ADgAOQA2AEQASgBEAFwAcwB0AGEAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAWfK/WGNGUk+LcfGoMJ+npV0Gq+kc70YSbBEwD6kjdH6m2ymaxNGMHAFmpkZh/DBSnx2VCpXa4LrT1PvIFQsG7yVTUBQflxHbyfh+vfAMGgoO8SraAJMAc1QnzbzrroTV1cBMFq0bKmwE5OvnI9Sgo8DVs/VuQ3UQt2Hb+2evNYQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-7896DJD\stas" issuerKeyHash="9b726323a5149448642b7ad7aa7a2adf0a99363c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yA3eise0X9f/54tS63komRroZIoai50aRZtdypulBNQ=</DigestValue></Reference></SignedInfo><SignatureValue>IJ/SSvU4btRz3VvSVLrtY4xi1+SifWotvO7VgyZgdYUUiwfH3B5/75XWM0wyMYHNQwKyNVkaMOm0QyhOg24/cUPa3SIsq4gTbBccBOGDoJ1VqdWBomwSMaDsnDz78OP91yKWvtaJQvoqMtOsm2FCeLzeZ4TRL9oABnr4IYRuQoY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d404a59bca5d9b451a9d8b1a8a64e81a992879eb528be7ffd75fb4c78ade0dc8" Description="" Url=""><as:assemblyIdentity name="word_test.dll" version="1.0.0.2" publicKeyToken="192b50669c53e231" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7896DJD\stas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tD25O6N971u/ffqos7xnMzAwjPmGnap0RQhlFAnBESI=</DigestValue></Reference></SignedInfo><SignatureValue>clHD+ONfNW5Kx5FMcJXOoafzxK6Zg/wQ3xSxXNloa74Szyhfi0geS4J4drT+BBA/KciIbu1qWb0+bmHCH1jlgvQwOWFljBOAWZguDYB4hw8BcHNBhJp2xcG461hAQIPjxe+8sOBp6QATXMEjkXSQwddHnS6r+psIjTEsJ/AMr3A=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVscF+h0ahYVD3DpOidtpHzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADcAOAA5ADYARABKAEQAXABzAHQAYQBzMB4XDTI0MDIyNjE0NTUzNFoXDTI1MDIyNTIwNTUzNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQA3ADgAOQA2AEQASgBEAFwAcwB0AGEAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwFx+gotIqu5V+OqXMN4H44J6rYbGXLRICA87sNGSVxn+C2wyC0vsuWCx4bzftLlaUfpyUG7TTF1DAws6ruupypTahyf9K982VmzETIGEyB7O3Av2pyTOASo286QSSJeLUXmHN3NF8h0aBOpnJsmGsLGIbgsphcL401pUDq3N2rkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAWfK/WGNGUk+LcfGoMJ+npV0Gq+kc70YSbBEwD6kjdH6m2ymaxNGMHAFmpkZh/DBSnx2VCpXa4LrT1PvIFQsG7yVTUBQflxHbyfh+vfAMGgoO8SraAJMAc1QnzbzrroTV1cBMFq0bKmwE5OvnI9Sgo8DVs/VuQ3UQt2Hb+2evNYQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

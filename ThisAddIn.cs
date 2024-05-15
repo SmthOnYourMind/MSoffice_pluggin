@@ -24,7 +24,7 @@ namespace word_test
             if (result == DialogResult.Yes)
             {
                 Process.Start("https://www.gosuslugi.ru/crt");
-            }
+            }         
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

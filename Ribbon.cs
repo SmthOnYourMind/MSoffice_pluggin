@@ -14,6 +14,7 @@ using System.Net.Http;
 using Task = System.Threading.Tasks.Task;
 using Microsoft.VisualBasic;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace word_test
 {
@@ -134,9 +135,52 @@ namespace word_test
             MessageBox.Show(result);
         }
 
+        public class CustomMessage : Form
+        {
+            private Label messageLabel;
+            private Button buttonToSite;
+            public CustomMessage(string message)
+            {
+                
+                this.Text = "Пользовательская инструкция по поиску авторизационного ключа";
+                this.Size = new System.Drawing.Size(670, 200);
+                this.StartPosition = FormStartPosition.CenterScreen;
+
+                
+                messageLabel = new Label();
+                messageLabel.Text = message;
+                messageLabel.Location = new System.Drawing.Point(10, 10);
+                messageLabel.Size = new System.Drawing.Size(700, 100);
+                this.Controls.Add(messageLabel);
+
+                buttonToSite = new Button();
+                buttonToSite.Text = "Получить ключ";
+                buttonToSite.Location = new System.Drawing.Point(270, 120);
+                buttonToSite.Size = new Size(75, 35);
+                buttonToSite.Click += new EventHandler(buttonToSite_Click);
+                this.Controls.Add(buttonToSite);
+            }
+
+            private void buttonToSite_Click(object sender, EventArgs e)
+            {
+                Process.Start("https://developers.sber.ru/studio/workspaces/");
+            }
+            public static void Show(string message)
+            {
+                CustomMessage inst = new CustomMessage(message);
+                inst.ShowDialog();
+            }
+        }
+
         public void ShowInstruction(Office.IRibbonControl control)
         {
-            MessageBox.Show("Инструкция по поиску токена GigaChat:\n1) ...\n2) ...\n3) ...");
+
+            CustomMessage.Show("Пользовательская инструкция по поиску ключа авторизации: \n" +
+            "1.\tНужно пройти регистрацию через телефон или SberID по ссылке - https://developers.sber.ru/studio/registration\n" +
+            "2.\tВ меню, в левой части экрана необходимо нажать кнопку «Создать проект» и заполнить все поля для создания.\n" +
+            "3.\tТеперь нужно зайти в созданный проект.\n" +
+            "4.\tВ открытом проекте смотрим на правую колонку, где присутствует надпись \n\t«Используйте ключи для подключения сервиса», здесь нам нужно нажать «Сгенерировать»\n" +
+            "5.\tВ открытом окне «Новый Client Secret» нас интересует поле «Авторизационные данные».\r\n\tДанные оттуда нужно сохранить к себе. Этот набор символов и есть Ваш ключ для использования нашего плагина.");
         }
 
         public void ShowSertificates(Office.IRibbonControl control)
