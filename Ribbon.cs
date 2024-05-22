@@ -104,7 +104,12 @@ namespace word_test
                 result = Task.Run(async () => await TestRequestAPI.Run("Перепиши следующий текст в разговорном стиле\n" + currentSelectedText)).GetAwaiter().GetResult();
             }
 
-            currentRange.Text = result;
+            if (result != "error")
+                currentRange.Text = result;
+            else
+            {
+                MessageBox.Show("Неверный токен, попробуйте другой");
+            }
         }
 
         public void InsertToken(Office.IRibbonControl control)
@@ -133,7 +138,11 @@ namespace word_test
             string input = Interaction.InputBox("Введите свой запрос", "Ввод запроса", "Например: Какие спутники есть у Сатурна", 500, 700);
             string result = Task.Run(async () => await TestRequestAPI.Run(input)).GetAwaiter().GetResult();
 
-            MessageBox.Show(result);
+            if (result != "error")
+                MessageBox.Show(result);
+            else
+                MessageBox.Show("Неверный токен, попробуйте другой");
+
         }
 
         public class CustomMessage : Form
