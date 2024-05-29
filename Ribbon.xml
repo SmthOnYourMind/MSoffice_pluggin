@@ -11,20 +11,21 @@
                     <button id="ribbon_button2" onAction="SendRequest" label="Сгенерировать текст по запросу" showImage="false" />
                     <button id="ribbon_button3" onAction="ShowInstruction" label="Показать инструкцию" showImage="false" />
                     <button id="ribbon_button4" onAction="InsertDefaultToken" label="Вставить универсальный токен" showImage="false" />
+                    <button id="ribbon_button5" onAction="ShowToken" label="Показать текущий токен" showImage="false" />
                 </group>
                 <group id="group2" label="Прочее">
-                    <button id="ribbon_button5" onAction="ShowSertificates" label="Сертификаты Минцифры" showImage="false" />
-                    <button id="ribbon_button6" onAction="ShowHelp" label="Помощь" showImage="false" />
-                    <button id="ribbon_button7" onAction="ShowAbout" label="О нас" showImage="false" />
+                    <button id="ribbon_button6" onAction="ShowSertificates" label="Сертификаты Минцифры" showImage="false" />
+                    <button id="ribbon_button7" onAction="ShowHelp" label="Помощь" showImage="false" />
+                    <button id="ribbon_button8" onAction="ShowAbout" label="О нас" showImage="false" />
                 </group>
             </tab>
         </tabs>
     </ribbon>
   <contextMenus>
     <contextMenu idMso="ContextMenuText">
-      <button id="context_button1" label="Gigachat: Переписывание выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
-      <button id="context_button2" label="Gigachat: Дополнение выделенного текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
-      <button id="context_button3" label="Gigachat: Краткое содержание текста" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button1" label="Gigachat: Переписать другими словами" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button2" label="Gigachat: Расписать подробнее" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
+      <button id="context_button3" label="Gigachat: Сжать текст" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
       <button id="context_button4" label="Gigachat: Перевод текста на английский" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
       <button id="context_button5" label="Gigachat: Перевод текста на русский" insertBeforeMso="HyperlinkInsert" onAction="GetButtonID" />
       <menu id="submenu" label="Gigachat: Изменить стиль текста" >

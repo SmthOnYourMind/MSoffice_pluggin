@@ -56,7 +56,7 @@ namespace word_test
         }
         public void GetButtonID(Office.IRibbonControl control)
         {
-            if (TestRequestAPI.GetToken() == "")
+            if (TestRequestAPI.GetToken() == null)
             {
                 MessageBox.Show("Сначала введите токен");
                 return;
@@ -71,13 +71,20 @@ namespace word_test
 
             currentSelectedText = currentRange.Text;
             string result = "";
+
+            if (currentSelectedText == null)
+            {
+                MessageBox.Show("Выделите текст который хотите изменить");
+                return;
+            }
+
             if (control.Id == "context_button1")
             {
-                result = Task.Run(async () => await TestRequestAPI.Run("Перепеши следующий текст по другому\n" + currentSelectedText)).GetAwaiter().GetResult();
+                result = Task.Run(async () => await TestRequestAPI.Run("Перепеши следующий текст другими словами\n" + currentSelectedText)).GetAwaiter().GetResult();
             }
             else if (control.Id == "context_button2")
             {
-                result = Task.Run(async () => await TestRequestAPI.Run("Дополни следущий текст\n" + currentSelectedText)).GetAwaiter().GetResult();
+                result = Task.Run(async () => await TestRequestAPI.Run("Расскажи подробнее про следущее\n" + currentSelectedText)).GetAwaiter().GetResult();
             }
             else if (control.Id == "context_button3")
             {
@@ -108,7 +115,7 @@ namespace word_test
                 currentRange.Text = result;
             else
             {
-                MessageBox.Show("Неверный токен, попробуйте другой");
+                MessageBox.Show("Проверьте правильность токена, установлены ли сертификаты, подключение к интернету");
             }
         }
 
@@ -124,7 +131,7 @@ namespace word_test
 
         public void SendRequest(Office.IRibbonControl control)
         {
-            if (TestRequestAPI.GetToken() == "")
+            if (TestRequestAPI.GetToken() == null)
             {
                 MessageBox.Show("Сначала введите токен");
                 return;
@@ -137,11 +144,12 @@ namespace word_test
 
             string input = Interaction.InputBox("Введите свой запрос", "Ввод запроса", "Например: Какие спутники есть у Сатурна", 500, 700);
             string result = Task.Run(async () => await TestRequestAPI.Run(input)).GetAwaiter().GetResult();
-
+            Microsoft.Office.Interop.Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
             if (result != "error")
-                MessageBox.Show(result);
+                currentRange.Text = result;
+            //MessageBox.Show(result);
             else
-                MessageBox.Show("Неверный токен, попробуйте другой");
+                MessageBox.Show("Проверьте правильность токена, установлены ли сертификаты, подключение к интернету");
 
         }
 
@@ -193,6 +201,16 @@ namespace word_test
             "5.\tВ открытом окне «Новый Client Secret» нас интересует поле «Авторизационные данные».\r\n\tДанные оттуда нужно сохранить к себе. Этот набор символов и есть Ваш ключ для использования нашего плагина.");
         }
 
+        public void ShowToken(Office.IRibbonControl control)
+        {
+            string token = TestRequestAPI.GetToken();
+
+            if (token != null)
+                MessageBox.Show("Ваш токен:\n" + token);
+            else
+                MessageBox.Show("Токен еще не введен");
+        }
+
         public void ShowSertificates(Office.IRibbonControl control)
         {
             var result = MessageBox.Show("Перейти на сайт https://www.gosuslugi.ru/crt чтобы скачать сертификаты минцифры?",
@@ -206,7 +224,7 @@ namespace word_test
 
         public void ShowHelp(Office.IRibbonControl control)
         {
-            MessageBox.Show("Помощь: ");
+            MessageBox.Show("Помощь:\nЧтобы пользоваться функциями Gigachat вам необходимо установить сертификаты минцифры, ввести свой токен (или воспользоваться универсальным) и применить нужные вам функции");
         }
 
         public void ShowAbout(Office.IRibbonControl control)
