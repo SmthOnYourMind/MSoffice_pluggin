@@ -31,6 +31,11 @@ namespace word_test
             return currentSelectedText;
         }
 
+        public static string GetDefaultToken()
+        {
+            return default_token;
+        }
+
         private Office.IRibbonUI ribbon;
 
         public Ribbon()
